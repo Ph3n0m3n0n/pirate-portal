@@ -1,6 +1,6 @@
-<h2>MEAN Stack RESTful API Guestbook++ Web App</h2>
+<h2>Welcome to the Pirate Portal</h2>
 
-<img src="http://2heartsweddings.net/wp-content/uploads/2011/02/logo_guestbook.jpg" alt="Guestbook++">
+<img src="/public/images/music-skull.png" alt="Pirate Portal">
 
 The technologies that were used to create this web application are:
 
@@ -9,14 +9,15 @@ The technologies that were used to create this web application are:
 <li>Express</li>
 <li>Handlebars</li>
 <li>NodeJS</li>
-<li>Stormpath</li>
+<li>Filestack API</li>
+<li>Soundcloud API</li>
 </ul>
 
 <h3>Instructions</h3>
 
 To clone, install and run this project, follow these steps: 
 
-    git clone https://github.com/Ph3n0m3n0n/Guestbook.git
+    git clone https://github.com/Ph3n0m3n0n/pirate-portal.git
 
 then install the Node modules with
 
