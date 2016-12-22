@@ -1,17 +1,39 @@
 {
-  "name": "how-to-nerd",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "name": "pirate-portal",
+  "version": "1.0.0",
+  "description": "Where sharing is caring!",
+  "main": "app.js",
   "dependencies": {
-    "body-parser": "~1.15.1",
+    "bcryptjs": "*",
+    "body-parser": "^1.10.2",
+    "connect-flash": "*",
+    "connect-mongo": "*",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
-    "express": "~4.13.4",
-    "express-handlebars": "*",
+    "dotenv": "^2.0.0",
+    "express": "^4.11.1",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.3",
     "morgan": "~1.7.0",
+    "nodemon": "^1.11.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ph3n0m3n0n/pirate-portal.git"
+  },
+  "author": "Ph3n0m3n0n",
+  "license": "ISC"
 }
