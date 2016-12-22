@@ -1,21 +1,15 @@
 {
   "name": "pirate-portal",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "",
   "main": "server.js",
-=======
   "description": "Where sharing is caring!",
   "main": "app.js",
->>>>>>> temp
   "dependencies": {
     "bcryptjs": "*",
     "body-parser": "^1.10.2",
     "connect-flash": "*",
-<<<<<<< HEAD
-=======
     "connect-mongo": "*",
->>>>>>> temp
     "cookie-parser": "~1.4.3",
     "connect-mongo": "*",
     "debug": "~2.2.0",
@@ -41,11 +35,7 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
-    "url": "https://github.com/Ph3n0m3n0n/pirate-portal"
-=======
     "url": "https://github.com/Ph3n0m3n0n/pirate-portal.git"
->>>>>>> temp
   },
   "author": "Ph3n0m3n0n",
   "license": "ISC"
