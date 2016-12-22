@@ -1,0 +1,17 @@
+body {
+  background: url("http://img.wallpaperfolder.com/f/7A599127FFE9/kali-linux.jpg");
+  margin: auto;
+  /* Set a specific height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-color: #1a1b1c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 50px;
+  overflow-y: scroll;
+}
