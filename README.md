@@ -1,6 +1,6 @@
 <h2>Welcome to the Pirate Portal</h2>
 
-<img src="music-skull.png" alt="Pirate Portal">
+<img src="/images/music-skull.png" alt="Pirate Portal">
 
 The technologies that were used to create this web application are:
 
