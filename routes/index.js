@@ -7,12 +7,14 @@ var User = require('../models/users.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	User.find({}, function (err, docs) {
-    if (err) throw err;
-      // console.log(docs);
-      res.render('index', { title: 'Pirate Portal', docs: docs });
-  	  console.log('This is the index.js file')
-  });
+	res.render('index', { title: 'Pirate Portal' });
+	console.log('This is the index.js file');
+	// User.find({}, function (err, docs) {
+ //    if (err) throw err;
+ //      // console.log(docs);
+ //      res.render('index', { title: 'Pirate Portal', docs: docs });
+ //  	  console.log('This is the index.js file')
+ //  });
 });
 
 module.exports = router;
