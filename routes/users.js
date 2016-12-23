@@ -6,14 +6,27 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('../models/users');
 
-// Login
-router.get('/login', function(req, res){
-  res.render('login');
+// Music
+router.get('/music', function(req, res){
+  res.render('music');
 });
 
-// Dashboard
-router.get('/dashboard', function(req, res){
-  res.render('dashboard');
+// Videos
+router.get('/videos', function(req, res){
+  res.render('videos');
+});
+
+// Art
+router.get('/art', function(req, res){
+  res.render('art');
+});
+
+// Login
+router.get('/login', function(req, res){
+  var msg = req.session.msg;
+  req.session.msg = null;
+  console.log("the msg is: " + msg);
+  res.render('login', {msg: msg});
 });
 
 // Register
@@ -28,6 +41,7 @@ router.post('/register', function(req, res){
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
+  var message = req.body.message;
 
 	// Validation
 	req.checkBody('name', 'Name is required').notEmpty();
@@ -65,6 +79,12 @@ router.post('/register', function(req, res){
       });
 		});
 
+    req.session.msg = "You are registered and can now login";
+    console.log("sucess on register");
+    res.redirect('/users/login');
+ }
+});
+
     /* GET userlist */
     router.get('/userlist', function(req, res) {
         var db = req.db;
@@ -83,13 +103,19 @@ router.post('/register', function(req, res){
             res.send((err === null) ? { msg: '' } : { msg:'error: ' + err });
         });
     });
-    
 
-		req.flash('success_msg', 'You are registered and can now login');
-		res.redirect('/users/login');
-	}
+// GET Dashboard
+router.get('/dashboard', function(req, res){
+  console.log('current user is ' + req.user.name);
+  User.find({'name':req.user.name}, function (err, docs) {
+    if (err) throw err;
+      // console.log(docs);
+    res.render('dashboard', { title: 'Pirate Portal', docs: docs });
+    console.log('This is the users.js file for dashboard');
+  });
 });
 
+// Local Passport Strategy
 passport.use(new LocalStrategy(
   function(username, password, done) {
    User.getUserByUsername(username, function(err, user){
@@ -119,11 +145,12 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-router.post('/login',
-  passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
-  function(req, res) {
-    res.redirect('/');
-  });
+router.post('/login', passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login', failureFlash: true}), function(req, res) {
+    
+  console.log(req.body.username);
+  res.send('nothing');
+    // res.redirect('/');
+});
 
 router.get('/logout', function(req, res){
 	req.logout();
