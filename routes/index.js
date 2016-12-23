@@ -6,11 +6,11 @@ var session = require('express-session');
 var Post = require('../models/posts.js');
 
 // GET Index featured articles
-router.get('/', function(req, res, next) {
-  // console.log('current user is ' + req.user.name);
+router.get('/', function(req, res) {
+  console.log('current user is ' + req.user.name);
   Post.find({}, function(err, posts) {
     if (err) throw err;
-      console.log(docs);
+      // console.log(docs);
     res.render('index', { title: 'Pirate Portal', posts: posts });
   });
 });
