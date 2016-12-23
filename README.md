@@ -11,6 +11,7 @@ The technologies that were used to create this web application are:
 <li>NodeJS</li>
 <li>Filestack API</li>
 <li>Soundcloud API</li>
+<li>and Passport and bcrypt for user authentication</li>
 </ul>
 
 <h3>Instructions</h3>
