@@ -15,3 +15,9 @@ body {
   margin: 50px;
   overflow-y: scroll;
 }
+#featured-songs {
+  padding-right: 10px;
+}
+#featured-art {
+  padding: 50px;
+}
