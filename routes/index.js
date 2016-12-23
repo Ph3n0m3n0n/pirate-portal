@@ -3,18 +3,16 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var mongo = require('mongodb');
 var session = require('express-session');
-var User = require('../models/users.js');
+var Post = require('../models/posts.js');
 
-/* GET home page. */
+// GET Index featured articles
 router.get('/', function(req, res, next) {
-	res.render('index', { title: 'Pirate Portal' });
-	console.log('This is the index.js file');
-	// User.find({}, function (err, docs) {
- //    if (err) throw err;
- //      // console.log(docs);
- //      res.render('index', { title: 'Pirate Portal', docs: docs });
- //  	  console.log('This is the index.js file')
- //  });
+  console.log('current user is ' + req.user.name);
+  Post.find({}, function(err, posts) {
+    if (err) throw err;
+      // console.log(docs);
+    res.render('index', { title: 'Pirate Portal', posts: posts });
+  });
 });
 
 module.exports = router;
