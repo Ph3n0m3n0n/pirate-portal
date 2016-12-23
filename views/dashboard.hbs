@@ -1,0 +1,39 @@
+<h2>Welcome to your Dashboard, {{user.username}}</h2><hr>
+<div>
+  <h3>Upload a file</h3><br>
+    <p>If you would like to add a file to our site, please upload it here. It will be scanned and posted once it is approved.</p>
+      <div><input type="filepicker" data-fp-apikey="AjODfLUEUSFee0l6YuR0yz"onchange="alert(event.fpfile.url)"></div>
+
+<h2>Your ShoutOuts</h2><hr>
+  <div class="container">
+    <!-- Articles to display in a table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>         
+          <th>Author</th>
+          <th>ShoutOut</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control" ng-model="post.title"></td>
+          <td><input class="form-control" ng-model="post.author"></td>
+          <td><input class="form-control" ng-model="post.post"></td>
+          <td><button class="btn btn-primary" ng-click="addPost()">Add</button></td>
+          <td><button class="btn btn-success" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-default" ng-click="deselect()">Clear</button></td>
+        </tr>
+        {{# each posts}}
+          <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.author}}</td>
+            <td>{{this.post}}</td>
+            <td>{{this.createDate}}</td>
+            <td><button class="btn btn-danger" ng-click="remove({{this._id}})">Remove</button></td>
+            <td><button class="btn btn-warning" ng-click="edit({{this._id}})">Edit</button></td>
+          </tr>
+          {{/each}}
+      </tbody>
+    </table>
+</div>
