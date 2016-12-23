@@ -7,7 +7,7 @@ var Post = require('../models/posts.js');
 
 // GET Index featured articles
 router.get('/', function(req, res) {
-  console.log('current user is ' + req.user.name);
+  // console.log('current user is ' + req.user.name);
   Post.find({}, function(err, posts) {
     if (err) throw err;
       // console.log(docs);
