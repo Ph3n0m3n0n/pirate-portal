@@ -1,5 +1,84 @@
-<div class="container">
-<audio style="border: solid;" controls>
-	  <source src="Grabbitz - Follow Me.mp3" type="audio/mp3">
-</audio>
-</div>
+<h2>Soundcloud Top Picks of the Month</h2><hr>
+            <div style="display: inline-flex;"><!-- Flexbox -->
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/255852095&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> 
+              </div>
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293181375&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293361259&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204901054&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/278386895&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+              <div id="featured-songs">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290839918&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+            </div><!-- End flexbox -->
+            
+<h2>Latest ShoutOuts</h2><hr>
+	<div class="container">
+		<!-- Articles to display in a table -->
+		<table class="table">
+	      <thead>
+	        <tr>
+	          <th>Title</th>
+	          <th>Author</th>        
+	          <th>ShoutOut</th>
+	          <th>Date Created</th> 
+	        </tr>
+	      </thead>
+	      <tbody>
+	        {{# each posts}}
+	        <tr>
+	          <td>{{this.title}}</td>
+	          <td>{{this.author}}</td>
+	          <td>{{this.post}}</td>
+	          <td>{{this.createDate}}</td>
+	        </tr>
+	        {{/each}}
+	      </tbody>
+	    </table>
+	</div>
+
+
+<h2>Free downloads</h2><hr>
+	<div class="container">
+		<h3>Featured Songs</h3>
+			<p>For the best listening experience, we recommend <a target="blank" href="https://www.vlc.de/vlc_download_64bit.php">VLC media player.</a></p><hr>
+
+				<div style="display: inline-flex;"><!-- Flexbox -->
+
+					<div id="featured-songs">
+					<h4>Illuminati - Anonymous</h4>
+					<audio controls>
+						  <source src="https://00e9e64bac948246ecfc4e828503072c9e1f6c06ae111914ef-apidata.googleusercontent.com/download/storage/v1/b/music_file_samples/o/Google%20Cloud%20Storage%2FIlluminati-Anonymous.mp3?qk=AD5uMEsCpp_Gn_n3UR7D0dkmy2Bz1LTxsZlR2vkvD3GrhavGESyyfniWD2N4uJ1Pm8DXoq0Iks8-wBq3dR0npxc0FwiMDBfc1ofe2nlR6iPRzssqHOmRJMSCub7b-cGzjVUH1_aNVIqpKNoYateBNEmTEEfpHXU1mUzF_XPh7qRs56nbfj2oJi9x3g4sVWL5rSGeH3UrHJMBTl4xfTja7kLEpdCWg1TSG_3e5PNWmaxnMFDamisOjUuQLF1dQVbg2cE2nCFQa-8xdqeSOnJ3fZfNtz37tcChvTglbshpWsynCJqg8LLRYZWtb1wSjn1PS4dg1kU6dr9Pz7yAuqNb_j-2vnuPYQOFeWd_b_cltfKm2chGVjqvM245fJB4fvS1a4QBaXvaUfSHenxGnFwcKOCvesLtHdHP8hrK3p08USO6w3wY0axZHeTHP7gLvPDWtccttwWYauOJHDJfbuTiPEYQsnhkms1Juz38OL4HlweBoN-HD4MaTZuV2Vln39DNfU1iwYqRXEbdlFpdIgMfiPHBkvTrnZIfRdwVM1CbuJpp8t9anXuaroafNh14gzvSBoeQCAAHtuRkapAPztbMZRmzNz_NWiP2SkrLnSCn-IfKXn-M-vK9qyAg8_FK_BFAVm20nR5jYXZFU8iWo7g89b0Ced7ySdAZj5v8ZdDrW11cVbLQwYgHMjioTtyYujcoA0n_Mz_Yi7i99Y_cfDv5S2xDVDCfzzcQ6K58E6yIhoFtDzt292kNRhjPNhjCMYZU8r4PV9axi5yNqhSvTDhmrWopJNye32dONZxA_fXuks6woHwvWlHkiLbhYtYs3bEfXD0sh5-l3VgNJ_9nPPOrM-hjfbK5pzAWsQ" type="audio/mp3">
+					</audio>
+					</div>
+
+					<div id="featured-songs">
+					<h4>Mortal Kombat Theme - Ryashon</h4>
+					<audio controls>
+						  <source src="https://00e9e64baceb143093aea1ad5a2ad287a295b6662310b60302-apidata.googleusercontent.com/download/storage/v1/b/music_file_samples/o/Google%20Cloud%20Storage%2FMortal_Kombat_Theme_Metal_Cover_by_Ryashon_CBR_192k.mp3?qk=AD5uMEt-UfbNDwE-cc2hSJpiQGRuLPxJVDdGokZZWsjoIJfyHBItZEYPcBn3ZCCRQ1Uscwjip3s5IbpRwUmqaxhuD1oTHR8gp9gN5Eyf1HUtxIRdkvronF3mC6d3ctXlT_sLaKWRbmWizcIYFOWg1MMvwDdxv_ElJvxoPUqPHeRL0A66u9xMBCqpv4M8yZYdDGcENaJSPEii0pw96cbHXAUNfVJ-uiHVBpNDu1Qt79IL89do6_xZEQulG0Xt5VgqIwM6jgcFJayoKRifI3t0RZpW2C8fl_BTWA2f6mv_8Rbo2p_CqQBmRuRoVHfmOIikcFryKvKejxISliroK2kFgd4_PAttK8f3sQktz6u8u_BEYsyuPjBH78qtunFXsV-zF_3cvYKc13UNBkcao-ORqrczaYu_0XFoSkysnp2EjFnrZI2ONTKdzTf6ylQL8eg2to_ViCK2VOM8RwX-iK6h_jBxoZlSMk_x7Qpzn2JVy04E3UD4Lw8qZMrhBKPI9WqdmQp2ig_bo1DiJmD8AU1GX6ZcNX2e_qbV6PLZ7A_nSysmXmiz4RTMKXw1EYw4mEXqYAV4XTSNClC9QQZ5_VSiTTFKMx_Q1uqSDUoUYK6Q1_UBFNFedLDfsr-yZIuerTQffBTk1aijv2cYuTSBU0VMM9eah3gP7orHQnY_i9AWcfy_y_Szs0OC2q0jGkDsX0eVAQAf993LEO3_s5mzK9T3DGqSjB3aeS04cyE2OPIKnEq0hoqxX62F3MobrZf_SaNcC0-ICmvmDTnPQb_hcfAh5qTdmL0qBrqFUm-9x5cDyk_ATNRcWFjWNKhqfNnYVXvd0ielNWxvcoqkRHfSlwJ55i4zOMrgmKdJlG8G70yTLi9Ckuj0-WksAvCgRJwMkMYj8S6ignOX_QRA" type="audio/mp3">
+					</audio>
+					</div>
+
+					<div id="featured-songs">
+					<h4>Devin Martin - Killbot</h4>
+					<audio controls>
+						  <source src="https://00e9e64bacb8229469f4faefb2b9ccfbfd0fd4451d7124b92c-apidata.googleusercontent.com/download/storage/v1/b/music_file_samples/o/Google%20Cloud%20Storage%2FDevin%20Martin%20-%20Killbot.mp3?qk=AD5uMEsPo6SnBwRX077uG68yA2Tv6S_eT2-iqeZzMhiWWzRullyekFSEWStPfTwV0qXMK0CD1dPR6SY09a6O3gKc_gO0hKfvERmKNC9wM_D6J9fToRdwyBH_yeLyVwhEsZfRjvnZJDFRYwYXfrgBMn1dmZ_PtZ6xPHN5SQaxClYKQ-ll-x5-OHzw1McOzrbpoIznLkZ6blwEbMePsauNMYODokZ2Vf5V9s0xK5n_chcABD581Bqjwwvaq4RxI_010YQnoKY7PzPwlPwutzKMs3H4Ou5hbF7mN2FkbcaCpZYga1OFIXi3DppmVSRZY6oEM49CFYTN3SXycVzh500FnG1VPz1bHvr8i2yU8q_izi2pEXFlVmsSmWFz9wIlx7JkkSnLZfetTN-_KxWJ5qPY7RaoYp5BYTXLxSl_5TSmXXgzemXkvob3WJDMzPXTHESS6hTvWFdexV8JAKtnB9O_QxrpX0GoW96ud3vo5Sl6am2pYQThujpzX1E80WE8HpZ8XAwb5VX2wRBl2CZUlaEXhW1Fy4rVcfTm7kLZ4ylep_t4Yx_MAUMY2YFKe_Ls_dQW_t2qcWL057pOt2T2fbWVLcdsEm3fd0QBUjW49Mtp9QIrasWByykqOEv_fnrRGe79oil9XCtoGjXsk42BxRC-o0axzCNCl99mGEwx38iEj3XM14ALpEbukGDKc1NYRZdi_lrry7PlBKmYJdLDVDlqJYf6dESTVE08RAVOB8fZNDZeB7ZCTMBM-j7k6IF9LO7iHDp9ktnrTGNQwHFvkLIQ41xk2Nvm5A4XyANyJs_eP3-BtqLxfuoppdccloLr6PXKSkKB7KqtehAufd0rnX_2l7vZVV1Ur_dDPw" type="audio/mp3">
+					</audio>
+					</div>
+
+					<div id="featured-songs">
+					<h4>Koven - Silence</h4>
+					<audio controls>
+						  <source src="https://00e9e64bacb04d5e0e5792a5b6656dae1fe3e62f6455143b91-apidata.googleusercontent.com/download/storage/v1/b/music_file_samples/o/Google%20Cloud%20Storage%2FKoven-Silence.mp3?qk=AD5uMEuDnesLeE5ENljR8z5hGHTRRXoByWTN-q2MIK9hdQ0KWT7dyZoB4HlZXOKETEq2BWU9asMHqh9CPhQteV7Ya7MSiChYQ4JkjYjAUCZ__DWkS9gTJyy8LQ1ysow09szQK1WLnbHtrLOeO-p6vBA-j0tu7zt1n6kr9bi7Yysf5MBlVxu7UrN__ulmmhRKlyDsdcnC1G_EnMm3WykC4V-Ma0UIFp59cBsD6bef9UJW780JPx8IUYVDDqfq9JtojX4VHHGxd9U5OtorflDrSJRW1k8hfPkuoih9xAxLNOu4g48ziIoH3kwjQ1PgVGw1SbHoYfxkA0m9Y2K_qDIPbtjShmXPMFXLqG6HU9K3TeyaW3T1m3ZlfANov_T0Yh6XESuBXZcUCT6FSmWYoLrUVsQYo6CMQ1hl35waBqsY9am-4UdjyTTj6DI5AiuZ1fPLLRYspSIGAWdnYspq6CdXzMofqRs4hFDLQyrUq4ol2ELJYJIxO9rZy5ff1-jL9fgSmJBzeDSheO3M6xUuUrazpBuf9jn-MQagxF7TBaK1DOBvjc0NwnDTqWg9JTIVn0uXgNO67qDE8JLwlp3RQrQhdqlgdnvdmLWSB9WTxlH0pbLsxtEEOkokDcqvpym65Lx9Er-LE_EgBkQG0PU7Rn4wV-9Z5VXgi2AKK20urppLm8BS__gnysy9JRWoy2IkYd6o3eSqP8TBeXV5S20M4OtH-0oPg3cydzTxyxTz70Wwkvnnj410pu1hEiN6UnHl86lZVh6glLDMjRsfsem33f1xVwBhSFW5qEG6AyHk5_q6ntHz2xGu_SpTa99EPUyPjJdBoUTEYSwi4cwx" type="audio/mp3">
+					</audio>
+					</div>
+				</div><!-- End flexbox -->
+	</div>
