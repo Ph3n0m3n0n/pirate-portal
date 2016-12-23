@@ -1,0 +1,47 @@
+<div>
+<h2>Welcome to your Dashboard, {{user.username}}</h2><hr>
+
+<h3>Upload a file</h3><br>
+<p>If you would like to add a file to our site, please upload it here. It will be scanned and posted once it is approved.</p>
+<div><input type="filepicker" data-fp-apikey="AjODfLUEUSFee0l6YuR0yz"onchange="alert(event.fpfile.url)"></div>
+
+<h2>Your ShoutOuts</h2><hr>
+  <div class="container">
+    <!-- Articles to display in a table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>         
+          <th>Author</th>
+          <th>ShoutOut</th>
+          <th>Created On</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <form method="post" action="/users/login">
+          <td><input class="form-control" name="title"></td>
+          <td><input class="form-control" name="author"></td>
+          <td><input min="100" max="300" required class="form-control" name="post"></td>
+          <td><button type="submit" class="btn btn-primary">Add</button></td>
+          <td><button type="submit" class="btn btn-success">Update</button>&nbsp;&nbsp;<button class="btn btn-default" type="submit">Clear</button></td>
+        </form>
+        </tr>
+        {{# each posts}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.author}}</td>
+          <td>{{this.post}}</td>
+          <td>{{this.createDate}}</td>
+          <td><button class="btn btn-danger" type="submit">Remove</button></td>
+          <td><button class="btn btn-warning" type="submit">Edit</button></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+
+
+
+</div>
